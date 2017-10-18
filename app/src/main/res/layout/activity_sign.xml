@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:text="签到"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/white"
+        android:background="@color/yellow"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/size_10"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:id="@+id/id_time"
+            android:gravity="center_vertical"
+            android:text="2017-5-9   00:00:00"
+            android:drawablePadding="@dimen/size_10"
+            android:drawableLeft="@mipmap/icon_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <TextView
+            android:id="@+id/id_address"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/size_10"
+            android:drawableLeft="@mipmap/icon_address1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <EditText
+        android:id="@+id/id_remarks"
+        android:hint="@string/main_sign_ed"
+        android:gravity="left|top"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@null"
+        android:layout_margin="@dimen/size_10"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#8a8a8a"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_10"
+        >
+        <LinearLayout
+            android:id="@+id/id_photo_lv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/size_10"
+            >
+            <com.yqritc.scalablevideoview.ScalableVideoView
+                android:id="@+id/id_video_sdv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                >
+            </com.yqritc.scalablevideoview.ScalableVideoView>
+            <ImageView
+                android:id="@+id/id_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_image"
+
+                >
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_photo_lv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/size_10"
+            >
+            <com.yqritc.scalablevideoview.ScalableVideoView
+                android:id="@+id/id_video_sdv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                >
+            </com.yqritc.scalablevideoview.ScalableVideoView>
+            <ImageView
+                android:id="@+id/id_photo1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_image"
+                android:layout_weight="1"
+
+                >
+            </ImageView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/id_submit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/main_sign_submit"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_main_all1"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

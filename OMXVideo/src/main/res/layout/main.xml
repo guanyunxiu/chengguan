@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+  <LinearLayout
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/preview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+	    <SurfaceView
+	        android:id="@+id/surface_camera"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:onClick="onSurfaceViewClick" />
+
+		<com.serenegiant.widget.UVCCameraTextureView
+			android:id="@+id/uvccam_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:onClick="onSurfaceViewClick" />
+
+		<TextView
+	        android:id="@+id/preview_osd_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentStart="true"
+	        android:layout_margin="5dp" />
+
+		<TextView
+            android:id="@+id/save_duration_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+			android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+			android:layout_alignParentBottom="false"
+			android:layout_alignWithParentIfMissing="false"
+			android:layout_marginTop="30dp"
+			android:layout_marginLeft="5dp" />
+
+		<TextView
+	        android:id="@+id/preview_osd_gps"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentEnd="true"
+	        android:layout_margin="5dp" />
+	    
+        <TextView
+	        android:id="@+id/preview_osd_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentEnd="true"
+	        android:layout_margin="5dp" />
+	    
+	    <TextView
+		    android:id="@+id/info_text"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text=""
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true" />
+	    
+	    <TextView
+	        android:id="@+id/uvccam_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text=""
+	        android:textSize="24sp"
+	        android:textColor="@android:color/white"
+	        android:background="@android:color/black"
+	        android:visibility="invisible"
+	        android:layout_centerInParent="true" />
+
+	    <View
+	        android:id="@+id/zoom_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:visibility="invisible" />
+	    
+	    <ImageView
+	        android:id="@+id/switchImageView"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:layout_below="@id/preview_osd_time"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="5dp"
+	        android:src="@drawable/switch_cam"
+	        android:alpha="0.6"
+	        android:onClick="onSwitchClick"
+	        android:visibility="invisible" />
+	    
+	    <ImageView
+			android:id="@+id/recImageView"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_below="@id/switchImageView"
+			android:layout_alignParentLeft="true"
+			android:layout_margin="5dp"
+			android:src="@drawable/trans"
+			android:alpha="0.8"
+			android:visibility="invisible" />
+	    
+	    <ImageView
+			android:id="@+id/saveImageView"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_below="@id/recImageView"
+			android:layout_alignParentLeft="true"
+			android:layout_margin="5dp"
+			android:src="@drawable/record"
+			android:alpha="0.8"
+			android:visibility="invisible" />
+
+    </RelativeLayout>
+
+  </LinearLayout>
+
+
+  <TextView
+        android:id="@+id/light_off_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:visibility="invisible"
+        android:layout_centerInParent="true" />
+
+  <TextView
+        android:id="@+id/call_info"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:visibility="invisible"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

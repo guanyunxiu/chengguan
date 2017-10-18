@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    android:rowCount="2" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageViewStartCamera"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onStartCameraClick"
+            android:src="@drawable/start_camera"
+            android:background="@drawable/start_btn_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewStartCamera"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:text="相机" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageViewStartReplay"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onStartReplayClick"
+            android:src="@drawable/start_replay"
+            android:background="@drawable/start_btn_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewStartReplay"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:text="回看" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageViewStartAudiorec"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onStartAudiorecClick"
+            android:src="@drawable/start_audiorec"
+            android:background="@drawable/start_btn_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewStartAudiorec"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:text="录音" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageViewStartSettings"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onStartSettingsClick"
+            android:src="@drawable/start_settings"
+            android:background="@drawable/start_btn_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewStartSettings"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:text="设置" />
+    </RelativeLayout>
+    
+</GridLayout>

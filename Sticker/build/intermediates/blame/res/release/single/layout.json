@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\build\\intermediates\\res\\merged\\release\\layout\\bqmm_keyboard_tab.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\src\\main\\res\\layout\\bqmm_keyboard_tab.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\build\\intermediates\\res\\merged\\release\\layout\\bqmm_item_emoji.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\src\\main\\res\\layout\\bqmm_item_emoji.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\build\\intermediates\\res\\merged\\release\\layout\\bqmm_item_face.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\src\\main\\res\\layout\\bqmm_item_face.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\build\\intermediates\\res\\merged\\release\\layout\\item_emoji_message.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\src\\main\\res\\layout\\item_emoji_message.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\build\\intermediates\\res\\merged\\release\\layout\\bqmm_message_view_left.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\src\\main\\res\\layout\\bqmm_message_view_left.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\build\\intermediates\\res\\merged\\release\\layout\\bqmm_message_view_right.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\Sticker\\src\\main\\res\\layout\\bqmm_message_view_right.xml"
+    }
+]

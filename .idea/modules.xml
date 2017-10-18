@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CWA.iml" filepath="$PROJECT_DIR$/CWA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMKit/IMKit.iml" filepath="$PROJECT_DIR$/IMKit/IMKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMLib/IMLib.iml" filepath="$PROJECT_DIR$/IMLib/IMLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sticker/Sticker.iml" filepath="$PROJECT_DIR$/Sticker/Sticker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camera/camera.iml" filepath="$PROJECT_DIR$/camera/camera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iOS_Dialog_Library/iOS_Dialog_Library.iml" filepath="$PROJECT_DIR$/iOS_Dialog_Library/iOS_Dialog_Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shvideolibrary/shvideolibrary.iml" filepath="$PROJECT_DIR$/shvideolibrary/shvideolibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wechatsmallvideoview/wechatsmallvideoview.iml" filepath="$PROJECT_DIR$/wechatsmallvideoview/wechatsmallvideoview.iml" />
+    </modules>
+  </component>
+</project>

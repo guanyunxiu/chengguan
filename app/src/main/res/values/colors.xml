@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="city_text_color">#393a3f</color>
+    <color name="bg_horizontal_line_color">#80a3a4a7</color>
+    <color name="line_color">#adadad</color>
+    <color name="red">#EF5053</color>
+    <color name="white">#ffffff</color>
+    <color name="background">#eeeeee</color>
+    <color name="yellow">#d2b363</color>
+    <color name="gray">#cccccc</color>
+    <color name="black">#000000</color>
+
+
+</resources>

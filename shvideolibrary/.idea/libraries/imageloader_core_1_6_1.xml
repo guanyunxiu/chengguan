@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="imageloader-core-1.6.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.novoda.imageloader/imageloader-core/1.6.1/73f9ecc71fd3830d9884df8a5d287267f51cedf3/imageloader-core-1.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.novoda.imageloader/imageloader-core/1.6.1/db60ee5411f24ee7b120b9a8092d860c8baac7bf/imageloader-core-1.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

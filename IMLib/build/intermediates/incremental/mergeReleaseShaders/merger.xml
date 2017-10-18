@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\Workspace\companny_workspace\chengguan\CWA\IMLib\src\main\shaders"/></dataSet><dataSet config="release"><source path="E:\Workspace\companny_workspace\chengguan\CWA\IMLib\src\release\shaders"/></dataSet></merger>

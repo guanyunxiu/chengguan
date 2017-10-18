@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\release\\drawable\\actionsheet_top_selector.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\src\\main\\res\\drawable\\actionsheet_top_selector.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\release\\drawable\\alertdialog_single_selector.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\src\\main\\res\\drawable\\alertdialog_single_selector.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\release\\drawable\\actionsheet_middle_selector.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\src\\main\\res\\drawable\\actionsheet_middle_selector.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\release\\drawable\\actionsheet_bottom_selector.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\src\\main\\res\\drawable\\actionsheet_bottom_selector.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\release\\drawable\\alertdialog_right_selector.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\src\\main\\res\\drawable\\alertdialog_right_selector.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\release\\drawable\\actionsheet_single_selector.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\src\\main\\res\\drawable\\actionsheet_single_selector.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\release\\drawable\\alertdialog_left_selector.xml",
+        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\src\\main\\res\\drawable\\alertdialog_left_selector.xml"
+    }
+]

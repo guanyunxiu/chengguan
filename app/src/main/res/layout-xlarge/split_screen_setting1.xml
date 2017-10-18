@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/split_screen_setting1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="3"
+    android:rowCount="5"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/widgetlayout1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout__imagesizes"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <!--ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_imagesizes"
+                android:src="@drawable/setting_imagesizes"
+                android:onClick="openImageSizes"
+                android:background="@drawable/start_btn_bg" /-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="照片尺寸"
+                android:id="@+id/textView_imagesizes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout__resolve"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <!--ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_resolve"
+                android:src="@drawable/setting_resolutionratio"
+                android:onClick="openVideoRecordResolutionRatio"
+                android:background="@drawable/start_btn_bg" /-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分辨率"
+                android:id="@+id/textView_resolve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout__display"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <!--ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_display"
+                android:src="@drawable/setting_display"
+                android:background="@drawable/start_btn_bg"
+                android:onClick="openDisplaySetting" /-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投射屏幕"
+                android:id="@+id/textView_display" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

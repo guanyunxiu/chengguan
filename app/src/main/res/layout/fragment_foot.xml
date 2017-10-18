@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/foot_time"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:id="@+id/id_time"
+            android:drawablePadding="@dimen/size_10"
+            android:gravity="center_vertical"
+            android:text="0000年00月00日  00:00"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_alignParentRight="true"
+            android:entries="@array/spingarr"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/id_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="时间"
+            />
+    </LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_height"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        >
+        <RelativeLayout
+            style="@style/tab_item_background"
+            >
+            <RadioButton
+                android:id="@+id/sign_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/icon_xuncha_on"
+                android:onClick="homeClicked"
+                android:clickable="true"
+                android:text="@string/menu_home"
+                style="@style/text_style2"
+                android:textSize="@dimen/size_10"
+                android:button="@null"
+                android:layout_marginTop="@dimen/margin_7"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/tab_item_background"
+            >
+            <RadioButton
+                android:id="@+id/sign_no"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/icon_qiandao"
+                android:onClick="myselfClicked"
+                android:clickable="true"
+                android:button="@null"
+                android:layout_marginTop="@dimen/margin_7"
+                android:text="@string/foot_nosign"
+                style="@style/text_style2"
+                android:textSize="@dimen/size_10"
+                />
+        </RelativeLayout>
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fg_content"/>
+</LinearLayout>

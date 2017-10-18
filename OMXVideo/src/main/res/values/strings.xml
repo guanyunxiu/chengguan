@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, OMXVideoActivity!</string>
+    <string name="app_name">无线视频监控</string>
+    <string name="start_rec">开始传输</string>
+    <string name="stop_rec">停止传输</string>
+    <string name="save">开始录像</string>
+    <string name="stop_save">停止录像</string>
+    <string name="shot_pic">拍照</string>
+    <string name="alarm">报警</string>
+    
+    <string name="def_server_addr">192.168.16.8</string>
+    <string name="def_cmd_port">17725</string>
+    <string name="def_data_port">728</string>
+    <string name="def_transmode">TCP</string>
+    <string name="def_ftp_user">ftp</string>
+    <string name="def_ftp_password">ftp</string>
+    <string name="def_ftp_port">21</string>
+    <string name="def_size">1280x720</string>
+    <string name="def_fps">30</string>
+    <string name="def_bitrate">1500</string>
+    <string name="def_gop">50</string>
+    <string name="def_flashlight">off</string>
+    <string name="def_pic_size">1280x720</string>
+    <string name="def_pic_flashlight">off</string>
+    <string name="def_save_size">1280x720</string>
+    <string name="def_save_bitrate">8000</string>
+    <string name="def_save_dir">/PICS</string>
+    <string name="def_save_filesize">64</string>
+    <string name="def_audio_type">AAC</string>
+    <string name="def_osd_devname">无线高清视频</string>
+    
+    <string name="def_netclient_addr"></string>
+    <string name="def_netclient_port">8310</string>
+    <string name="def_netclient_user">admin</string>
+    <string name="def_netclient_pswd">admin</string>
+    <string name="def_netclient_latency">3000</string>
+
+</resources>

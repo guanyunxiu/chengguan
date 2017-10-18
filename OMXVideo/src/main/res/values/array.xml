@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="transmode_entries">
+		<item>UDP</item>
+		<item>TCP</item>
+	</string-array>
+	
+    <string-array name="venc_type_entries">
+        <item>H.264</item>
+        <item>H.265</item>
+    </string-array>
+	
+    <string-array name="venc_type_values">
+        <item>h264</item>
+        <item>h265</item>
+    </string-array>
+
+	<string-array name="size_entries">
+	    <item>1920x1080</item>
+	    <item>1280x720</item>
+		<item>704x576</item>
+		<item>640x480</item>
+		<item>352x288</item>
+		<item>320x240</item>
+		<item>176x144</item>
+	</string-array>
+	
+	<string-array name="fps_entries">
+	    <item>30</item>
+		<item>25</item>
+		<item>20</item>
+		<item>15</item>
+		<item>10</item>
+		<item>5</item>
+	</string-array>
+	<string-array name="fps_values">
+	    <item>30</item>
+		<item>25</item>
+		<item>20</item>
+		<item>15</item>
+		<item>10</item>
+		<item>5</item>
+	</string-array>
+	
+	<string-array name="flashlight_entries">
+		<item>关闭</item>
+		<item>开启</item>
+	</string-array>
+	<string-array name="flashlight_values">
+		<item>off</item>
+		<item>on</item>
+	</string-array>
+	
+	<string-array name="pic_flashlight_entries">
+		<item>自动</item>
+		<item>关闭</item>
+		<item>开启</item>
+	</string-array>
+	<string-array name="pic_flashlight_values">
+		<item>auto</item>
+		<item>off</item>
+		<item>on</item>
+	</string-array>
+	
+	<string-array name="save_durations">
+		<item>1</item>
+		<item>3</item>
+	    <item>5</item>
+	    <item>10</item>
+	    <item>20</item>
+	    <item>30</item>
+	</string-array>
+	
+	<string-array name="audio_types">
+	    <item>AMR</item>
+	    <item>AAC</item>
+	</string-array>
+	
+	<string-array name="router_mode_names">
+	    <item>直连模式</item>
+	    <item>网关模式</item>
+	</string-array>
+	<string-array name="router_mode_values">
+	    <item>0</item>
+	    <item>1</item>
+	</string-array>
+	
+    <string-array name="cam_names">
+        <item>后置</item>
+        <item>前置</item>
+		<item>前置2</item>
+        <item>外置</item>
+    </string-array>
+    <string-array name="cam_values">
+        <item>back</item>
+        <item>front</item>
+		<item>front2</item>
+        <item>external</item>
+    </string-array>
+    
+    <string-array name="pic_continuous_names">
+        <item>关</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="pic_continuous_values">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+    
+    <string-array name="pre_post_record_names">
+        <item>关</item>
+        <item>10秒</item>
+        <item>20秒</item>
+        <item>30秒</item>
+    </string-array>
+    <string-array name="pre_post_record_values">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="screen_timeout_names">
+        <item>不关屏</item>
+        <item>1分</item>
+        <item>3分</item>
+    </string-array>
+    <string-array name="screen_timeout_values">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+    </string-array>
+
+	<string-array name="compress_mode_names">
+		<item>CBR</item>
+		<item>VBR</item>
+	</string-array>
+	<string-array name="compress_mode_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+
+	<string-array name="suspend_window_names">
+		<item>关闭</item>
+		<item>显示</item>
+	</string-array>
+	<string-array name="suspend_window_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+</resources>

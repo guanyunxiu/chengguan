@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\split_screen_setting1.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\split_screen_setting1.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\audiorecord.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\audiorecord.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\start.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\start.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\replay_tabhost.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\replay_tabhost.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\item.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\item.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\replay.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\replay.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\desklayout.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\desklayout.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\start_screen.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\start_screen.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\play.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\play.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\video.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\video.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\split_screen_setting3.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\split_screen_setting3.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\replay_list.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\replay_list.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\main_viewpage_layout.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\main_viewpage_layout.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\client.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\client.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\custom_preference_activity.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\custom_preference_activity.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\layout\\split_screen_setting2.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\layout\\split_screen_setting2.xml"
+    }
+]

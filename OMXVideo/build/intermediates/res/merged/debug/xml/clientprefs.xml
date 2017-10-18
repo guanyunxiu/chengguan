@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:title="Settings">
+	<PreferenceCategory android:title="远程视频">
+		<EditTextPreference android:title="服务器地址" android:defaultValue="@string/def_netclient_addr" android:key="netclient_addr"/>
+		<EditTextPreference android:title="端口" android:key="netclient_port" android:defaultValue="@string/def_netclient_port"/>
+		<EditTextPreference android:title="用户名" android:defaultValue="@string/def_netclient_user" android:key="netclient_user" />
+		<EditTextPreference android:title="密码" android:defaultValue="@string/def_netclient_pswd" android:key="netclient_pswd" />
+		<EditTextPreference android:title="延时" android:defaultValue="@string/def_netclient_latency" android:key="netclient_latency" />
+		<CheckBoxPreference android:title="硬件解码" android:key="hard_dec" android:defaultValue="false" />
+	</PreferenceCategory>
+</PreferenceScreen>

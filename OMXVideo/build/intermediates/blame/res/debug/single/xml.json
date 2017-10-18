@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\xml\\device_filter.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\xml\\device_filter.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\xml\\clientprefs.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\xml\\clientprefs.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\xml\\preferences.xml"
+    }
+]

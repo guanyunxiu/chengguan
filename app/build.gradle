@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.swsdkj.wsl"
+        minSdkVersion 16
+        targetSdkVersion 19
+        versionCode 16
+        versionName "2.6"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    defaultConfig {
+        multiDexEnabled true
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    allprojects { repositories {maven { url 'https://jitpack.io' } } }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile files('libs/AMap3DMap_5.0.0_AMapSearch_5.0.0_AMapLocation_3.3.0_20170311.jar')
+    compile 'com.android.support:recyclerview-v7:25.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'com.squareup.picasso:picasso:2.5.1'
+    compile 'com.yqritc:android-scalablevideoview:1.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile project(':camera')
+    compile project(path: ':iOS_Dialog_Library')
+    compile project(path: ':shvideolibrary')
+    compile files('libs/universal-image-loader-1.9.4-with-sources.jar')
+    compile project(path: ':wechatsmallvideoview')
+    compile 'com.yysauce:easyrecyclerview:1.0.0'
+    compile 'in.srain.cube:ptr-load-more:1.0.2'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile project(path: ':IMKit')
+    compile project(path: ':IMLib')
+    compile project(path: ':Sticker')
+    compile files('libs/MiPush_SDK_Client_3_2_2.jar')
+    compile 'com.github.MZCretin:AutoUpdateProject:v1.1.3'
+    compile files('libs/Amap_2DMap_V4.2.0_20170209.jar')
+    compile files('libs/ftp4j-1.7.jar')
+    compile 'com.android.support:multidex:1.0.1' //支持包用于5.0以下系统
+}

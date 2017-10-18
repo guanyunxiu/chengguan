@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\raw\\shutter.wav",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\raw\\shutter.wav"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\raw\\alarm.wav",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\raw\\alarm.wav"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\raw\\startstop.wav",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\raw\\startstop.wav"
+    }
+]

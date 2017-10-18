@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/replay_tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000000">
+
+            <FrameLayout
+                android:id="@+id/video_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000000">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/audio_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000000">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/image_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000000">
+            </FrameLayout>
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:tag="tabs"
+            android:background="#000000">
+        </TabWidget>
+    </LinearLayout>
+
+</TabHost>

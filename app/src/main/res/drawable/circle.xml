@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+    <!-- topLeftRadius、topRightRadius 为半圆角矩形上半部分的圆角半径，bottomLeftRadius、bottomRightRadius 为矩形下半部分的圆角半径，值为0表示直角 -->
+    <corners
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+
+    <gradient
+        android:angle="270"
+        android:endColor="@color/red"
+        android:startColor="@color/red" />
+
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/red" />
+</shape>

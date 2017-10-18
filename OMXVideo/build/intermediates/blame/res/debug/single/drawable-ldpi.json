@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\guide_dot_white.png",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\drawable-ldpi\\guide_dot_white.png"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\start_settings.png",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\drawable-ldpi\\start_settings.png"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\start_monito.png",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\drawable-ldpi\\start_monito.png"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\guide_dot_black.png",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\drawable-ldpi\\guide_dot_black.png"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\start_camera.png",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\drawable-ldpi\\start_camera.png"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\start_audiorec.png",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\drawable-ldpi\\start_audiorec.png"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\start_replay.png",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\drawable-ldpi\\start_replay.png"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\start_logout.png",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\drawable-ldpi\\start_logout.png"
+    },
+    {
+        "merged": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\microphone.png",
+        "source": "E:\\Workspace\\studio_workspace\\OMXVideo_phone_xunfu\\OMXVideo_phone_xunfu\\OMXVideo\\src\\main\\res\\drawable-ldpi\\microphone.png"
+    }
+]

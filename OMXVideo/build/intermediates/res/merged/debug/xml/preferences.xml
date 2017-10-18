@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:title="Settings">
+	<PreferenceCategory android:title="网络设置">
+		<EditTextPreference android:title="服务器地址" android:defaultValue="@string/def_server_addr" android:key="server_addr"/>
+		<EditTextPreference android:title="命令端口" android:key="cmd_port" android:defaultValue="@string/def_cmd_port" />
+		<EditTextPreference android:title="数据端口" android:key="data_port" android:defaultValue="@string/def_data_port" />
+		<ListPreference android:title="传输方式" android:defaultValue="@string/def_transmode" android:key="transmode" android:entries="@array/transmode_entries" android:entryValues="@array/transmode_entries" />
+		<EditTextPreference android:title="FTP用户" android:defaultValue="@string/def_ftp_user" android:key="ftp_user" />
+		<EditTextPreference android:title="FTP密码" android:defaultValue="@string/def_ftp_password" android:key="ftp_password" />
+		<EditTextPreference android:title="FTP端口" android:defaultValue="@string/def_ftp_port" android:key="ftp_port" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="视频参数">
+	    <ListPreference android:title="编码方式" android:defaultValue="h264" android:key="video_enc_type"
+	        android:entries="@array/venc_type_entries" android:entryValues="@array/venc_type_values" />
+		<ListPreference android:title="分辨率" android:defaultValue="@string/def_size" android:key="size"/>
+		<ListPreference android:title="帧率" android:entries="@array/fps_entries" android:entryValues="@array/fps_values" android:key="fps" android:defaultValue="@string/def_fps"/>
+		<EditTextPreference android:title="码率" android:key="bitrate" android:defaultValue="@string/def_bitrate" android:summary="kbps"/>
+		<EditTextPreference android:title="GOP长度" android:key="gop" android:defaultValue="@string/def_gop"/>
+		<ListPreference android:title="闪光灯" android:defaultValue="@string/def_flashlight" android:key="flashlight"
+		    android:entries="@array/flashlight_entries" android:entryValues="@array/flashlight_values" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="拍照参数">
+		<ListPreference android:title="照片分辨率" android:defaultValue="@string/def_pic_size" android:key="pic_size"/>
+		<ListPreference android:title="拍照闪光灯" android:defaultValue="@string/def_pic_flashlight" android:key="pic_flashlight"
+		    android:entries="@array/pic_flashlight_entries" android:entryValues="@array/pic_flashlight_values" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="录像设置">
+        <ListPreference android:title="录像分辨率" android:defaultValue="@string/def_save_size" android:key="save_size"/>
+        <EditTextPreference android:title="录像码率" android:key="save_bitrate" android:defaultValue="@string/def_save_bitrate" android:summary="kbps"/>
+		<EditTextPreference android:title="存储目录" android:defaultValue="@string/def_save_dir" android:key="save_dir"/>
+		<EditTextPreference android:title="文件尺寸" android:defaultValue="@string/def_save_filesize" android:key="save_filesize" android:summary="MB"/>
+		<ListPreference android:title="文件时长" android:defaultValue="5" android:key="save_duration" android:summary="分"
+		    android:entries="@array/save_durations" android:entryValues="@array/save_durations" />
+		<CheckBoxPreference android:title="只录音频" android:key="save_audio_only" android:defaultValue="false" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="音频设置">
+	    <ListPreference android:title="音频编码" android:defaultValue="@string/def_audio_type" android:key="audio_type"
+	        android:entries="@array/audio_types" android:entryValues="@array/audio_types" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="字幕叠加">
+		<CheckBoxPreference android:title="叠加时间戳" android:key="osd_time" android:defaultValue="true" />
+		<CheckBoxPreference android:title="叠加设备名称" android:key="osd_name" android:defaultValue="true" />
+		<EditTextPreference android:title="设备名称" android:key="osd_devname" android:defaultValue="@string/def_osd_devname"/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="高级">
+		<CheckBoxPreference android:title="硬件编码" android:key="hard_enc" android:defaultValue="true" />
+		<CheckBoxPreference android:title="双通道编码" android:key="dual_encoding" android:defaultValue="true" />
+		<CheckBoxPreference android:title="竖屏拍摄" android:key="rotate" android:defaultValue="false" />
+		<ListPreference android:title="压缩模式" android:key="compress_mode" android:defaultValue="0"
+			android:entries="@array/compress_mode_names" android:entryValues="@array/compress_mode_values" />
+		<ListPreference android:title="路由模式" android:key="router_mode" android:defaultValue="0"
+		    android:entries="@array/router_mode_names" android:entryValues="@array/router_mode_values" />
+		<ListPreference android:title="摄像头选择" android:key="cam_choice" android:defaultValue="back"
+		    android:entries="@array/cam_names" android:entryValues="@array/cam_values" />
+		<ListPreference android:title="连拍设置" android:key="pic_continuous" android:defaultValue="0"
+            android:entries="@array/pic_continuous_names" android:entryValues="@array/pic_continuous_values" />
+		<ListPreference android:title="预录设置" android:key="pre_record" android:defaultValue="0"
+            android:entries="@array/pre_post_record_names" android:entryValues="@array/pre_post_record_values" />
+		<ListPreference android:title="后录设置" android:key="post_record" android:defaultValue="0"
+            android:entries="@array/pre_post_record_names" android:entryValues="@array/pre_post_record_values" />
+		<ListPreference android:title="显示悬浮窗口" android:key="suspend_window" android:defaultValue="0"
+			android:entries="@array/suspend_window_names" android:entryValues="@array/suspend_window_values" />
+		<ListPreference android:title="无操作关屏" android:key="screen_timeout" android:defaultValue="0"
+            android:entries="@array/screen_timeout_names" android:entryValues="@array/screen_timeout_values" />
+	</PreferenceCategory>
+</PreferenceScreen>

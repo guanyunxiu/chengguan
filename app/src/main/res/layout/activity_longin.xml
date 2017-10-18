@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/longin_title"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="22dp"
+        />
+
+    <EditText
+        android:id="@+id/id_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:lines="1"
+        android:hint="@string/longin_name"
+        android:textSize="14sp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_login_line"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/id_photoNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:lines="1"
+        android:hint="@string/longin_phonenumber"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_login_line"
+        android:paddingLeft="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            android:id="@+id/id_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:hint="@string/longin_code"
+            android:textSize="14sp"
+            android:layout_weight="8"
+            android:paddingLeft="10dp"
+            android:background="@drawable/bg_login_line"
+            />
+        <TextView
+            android:id="@+id/id_but_sendCode"
+            android:layout_toRightOf="@+id/id_code"
+            android:text="@string/longin_code_in"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#cc00ff"
+            />
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/id_spinner2"
+        android:entries="@array/spingarr"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/id_but_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/longin_submit"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+</LinearLayout>

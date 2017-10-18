@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     >
+
+     <ListView
+         android:id="@android:id/list"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_above="@+id/menu" />
+
+     <Button
+         android:id="@+id/menu"
+         android:background="@android:drawable/ic_dialog_dialer"
+         android:layout_width="45dp"
+         android:layout_height="45dp"
+         android:layout_alignParentBottom="true"
+         android:onClick="onMenuClick"
+         />
+     <TextView android:id="@android:id/empty"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text=""
+         android:layout_centerInParent="true"
+         />
+
+     <ProgressBar
+         android:id="@+id/client_progress"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+       	 android:layout_centerVertical="true"
+         />
+     
+ </RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_up"
+            android:contentDescription="Up"
+	        android:layout_width="48dp"
+	        android:layout_height="48dp"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/btn_up"
+	        android:onClick="onUpClick" />
+	    <Button android:id="@+id/btn_del"
+	        android:contentDescription="Delete"
+	        android:layout_width="48dp"
+	        android:layout_height="48dp"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/btn_trash"
+	        android:onClick="onDelClick" />
+    </RelativeLayout>
+    
+    <ListView android:id="@android:id/list"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:drawSelectorOnTop="false" />
+
+</LinearLayout>
