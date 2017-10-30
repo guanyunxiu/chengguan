@@ -24,17 +24,16 @@ public class ChatActivity extends BaseActivity {
     TextView idChatName;
     @BindView(R.id.id_left_img)
     ImageView idLeftImg;
+
     @Override
-    protected void setContentView() {
-        setContentView(R.layout.activity_chat);
-        ButterKnife.bind(this);
-       // idChatName.setText(getIntent().getData().getQueryParameter("title"));
-        idChatName.setText("安全管理");
-        RongIM.getInstance().enableNewComingMessageIcon(true);//显示新消息提醒
+    protected int attachLayoutRes() {
+        return R.layout.activity_chat;
     }
 
     @Override
-    protected void init() {
+    protected void initViews() {
+        idChatName.setText("安全管理");
+        RongIM.getInstance().enableNewComingMessageIcon(true);//显示新消息提醒
         idLeftImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,4 +42,8 @@ public class ChatActivity extends BaseActivity {
         });
     }
 
+    @Override
+    protected void updateViews() {
+
+    }
 }
