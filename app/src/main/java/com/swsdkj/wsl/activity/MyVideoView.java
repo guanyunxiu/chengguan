@@ -21,12 +21,12 @@ public class MyVideoView extends BaseActivity{
     private FullVideoView mVideoView;
     private String dataStr;
     @Override
-    protected void setContentView() {
-        setContentView(R.layout.activity_mycamera);
+    protected int attachLayoutRes() {
+        return R.layout.activity_mycamera;
     }
 
     @Override
-    protected void init() {
+    protected void initViews() {
         dataStr = getIntent().getStringExtra("datapath");
 
         Log.i("123", dataStr + "------------------本地传递视频-----------------------");
@@ -53,4 +53,10 @@ public class MyVideoView extends BaseActivity{
             }
         });
     }
+
+    @Override
+    protected void updateViews() {
+
+    }
+
 }

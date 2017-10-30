@@ -7,6 +7,8 @@ package com.swsdkj.wsl.config;
 public class MyConfig {
     public static String myAddress=null;
     public static String myCity =  null;
+    public static Double Lat;//纬度
+    public static Double Lng;//经度
     /**
      * 权限常量相关
      */

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/height_10"
+    >
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="部门名称："
+        android:textColor="@color/text_black"
+        android:layout_marginLeft="@dimen/height_10"
+        android:layout_marginTop="@dimen/height_10"
+        />
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上水井盖"
+        android:textColor="@color/text_black"
+        android:layout_marginLeft="@dimen/height_90"
+        android:layout_marginTop="@dimen/height_10"
+        />
+</RelativeLayout>

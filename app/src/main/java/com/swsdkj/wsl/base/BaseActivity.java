@@ -1,138 +1,142 @@
 package com.swsdkj.wsl.base;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
+import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.amap.api.maps2d.MapView;
 import com.swsdkj.wsl.R;
-import com.swsdkj.wsl.config.MyConfig;
-import com.swsdkj.wsl.tool.StatusBarCompat;
+import com.swsdkj.wsl.view.LoadStateManager;
+import com.swsdkj.wsl.view.MultiStateView;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by Administrator on 2017/4/24 0024.
+ * Created by Administrator on 2017\8\7 0007.
  */
 
-public abstract class BaseActivity extends FragmentActivity {
+public abstract class BaseActivity extends AppCompatActivity {
+    @Nullable
+    @BindView(R.id.multiStateView)
+    protected MultiStateView multiStateView;
+    public Toolbar toolbar;
+    public TextView titleName;
+    public Context context;
+    public LoadStateManager mLoadStateManager;
+    /**
+     * 绑定布局文件
+     *
+     * @return 布局文件ID
+     */
+    @LayoutRes
+    protected abstract int attachLayoutRes();
 
+    /**
+     * 初始化视图控件WW
+     */
+    protected abstract void initViews();
+    /**
+     * 更新视图控件
+     */
+    protected abstract void updateViews();
+    protected BaseApplication getAppInstance() {
+        return (BaseApplication) getApplication();
+    }
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView();
-        StatusBarCompat.compat(this, getResources().getColor(R.color.black));
+        setContentView(attachLayoutRes());
 
+        getAppInstance().addActivity(this);
         ButterKnife.bind(this);
-        init();
+        context = this;
+        initToolBar();
+        initViews();
+        if(multiStateView != null) {
+            initMulState();
+        }
+        updateViews();
     }
-
-    protected abstract void setContentView();
-    protected abstract void init();
-
-
-    private int time1 = 0;
-    private Timer timer1;
-    TimerTask task1;
-    public void setCountdown(final TextView view) {
-        time1 = 180;
-        timer1 = new Timer();
-
-        task1 = new TimerTask() {
+    protected void initToolBar(){
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        titleName = (TextView)findViewById(R.id.title_name);
+        setSupportActionBar(toolbar);
+    }
+    public void initMulState(){
+        //loadManager初始化
+        mLoadStateManager = new LoadStateManager();
+        mLoadStateManager.setOnStateChangeListener(new BaseStateManager.OnStateChangeListener<LoadStateManager.LoadState>() {
             @Override
-            public void run() {
-
-                runOnUiThread(new Runnable() { // UI thread
-                    @Override
-                    public void run() {
-                        if (time1 <= 0) {
-                            view.setClickable(true);//重新获得点击
-                            view.setText(getResources().getString(R.string.sendcode));
-                            task1.cancel();
-
-                        } else {
-                            view.setClickable(false);//重新获得点击
-                            view.setText(time1 + getResources().getString(R.string.loginactivity_password_wait));
-
-                        }
-                        time1--;
-                    }
-                });
+            public void OnStateChange(LoadStateManager.LoadState state, Object obj) {
+                switch (state) {
+                    case Init:
+                        multiStateView.setViewState(MultiStateView.ViewState.LOADING);
+                        break;
+                    case Success:
+                        multiStateView.setViewState(MultiStateView.ViewState.CONTENT);
+                        break;
+                    case Failure:
+                        multiStateView.setViewState(MultiStateView.ViewState.ERROR);
+                        break;
+                    case NoData:
+                        multiStateView.setViewState(MultiStateView.ViewState.EMPTY);
+                    default:
+                        break;
+                }
             }
-        };
-        timer1.schedule(task1, 0, 1000);
-        time1 = 180;
+        });
+        mLoadStateManager.setState(LoadStateManager.LoadState.Init);
+        multiStateView.setRefreshOnClickListener(new View.OnClickListener() {
+            //TODO refreesh
+            @Override
+            public void onClick(View v) {
+                mLoadStateManager.setState(LoadStateManager.LoadState.Init);
+                updateViews();
+            }
+        });
     }
     /**
-     * 为子类提供一个权限检查方法
-     * @param permissions
-     * @return
+     * 初始化 Toolbar
+     *
+     *
+     * @param homeAsUpEnabled
+     * @param title
      */
-    public boolean hasPermission(String... permissions){
-        for(String permission : permissions){
-            if(ContextCompat.checkSelfPermission(this,permission) != PackageManager.PERMISSION_GRANTED){
-                return false;
-            }
+    protected void initTitle( boolean homeAsUpEnabled, String title) {
+        getSupportActionBar().setHomeAsUpIndicator(R.mipmap.icon_arrow);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(homeAsUpEnabled);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        if(!TextUtils.isEmpty(title)) {
+            titleName.setText(title);
         }
-        return true;
     }
-    /**
-     * 为子类提供一个权限请求方法
-     * @param code
-     * @param permissions
-     */
-    public void requestPermission(int code,String... permissions){
-        ActivityCompat.requestPermissions(this,permissions,code);
+    protected  void initTitle(Toolbar toolbar2, boolean homeAsUpEnabled){
+        setSupportActionBar(toolbar2);
+
+        getSupportActionBar().setHomeAsUpIndicator(R.mipmap.icon_arrow);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(homeAsUpEnabled);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
     }
 
+    protected void initTitle(boolean homeAsUpEnabled, int resTitle) {
+        initTitle( homeAsUpEnabled, getString(resTitle));
+    }
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        Log.i("code",requestCode+"***");
-        switch (requestCode){
-            case MyConfig.WRITE_EXTERNAL_CODE:
-                if(this.checkCallingOrSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-                    doSDCardPermission();
-                }
-                break;
-            case MyConfig.CALL_PHONE_CODE:
-                doCallPhone();
-                break;
-            case MyConfig.CAMERA_CODE:
-                if(this.checkCallingOrSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED){
-                    doCamera();
-                }
-                break;
-          /*  case Constants.RADIO_CODE:
-                if(this.checkCallingOrSelfPermission(Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED){
-                    Log.i("code","分局共");
-                    doRadio();
-                }
-                break;*/
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * 默认的写SD卡权限处理
-     */
-    public void doSDCardPermission(){
-    }
-    /**
-     * 默认的打电话处理
-     */
-    public void doCallPhone(){
-    }
-    public void doCamera(){
-    }
 }

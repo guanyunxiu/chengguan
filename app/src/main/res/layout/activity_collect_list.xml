@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:multistateview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.swsdkj.wsl.view.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            multistateview:msv_emptyView="@layout/empty_view"
+            multistateview:msv_errorView="@layout/error_view"
+            multistateview:msv_loadingView="@layout/activity_progressbar"
+            multistateview:msv_viewState="loading"
+            >
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </com.swsdkj.wsl.view.MultiStateView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/height_10"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/height_10"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上水井盖"
+            android:textColor="@color/main_blue"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="山西省太原市小店区电商街电子商务产业园"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="@dimen/height_10"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="@dimen/height_70"
+        android:layout_height="@dimen/height_60"
+        android:src="@mipmap/icon_defalut_img"
+        android:layout_gravity="right"
+        />
+</LinearLayout>

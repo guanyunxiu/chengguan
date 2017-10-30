@@ -1,5 +1,58 @@
 <resources>
-    <string name="app_name">安全管理</string>
+    <string name="app_name">智慧城管</string>
+    <!--登录-->
+    <string name="login_01">手机号</string>
+    <string name="login_02">密  码</string>
+    <string name="login_03">登  录</string>
+    <string name="login_05">确认密码</string>
+    <string name="login_04">还没有账号，去注册</string>
+    <string name="login_06">注    册</string>
+    <string name="login_07">已有账号，去注册</string>
+    <!--首页-->
+    <string name="main_01">信息列表</string>
+    <string name="main_02">搜集信息</string>
+    <string name="main_03">个人中心</string>
+    <!--采集信息-->
+    <string name="info_01">采集信息表</string>
+    <string name="info_02">基本信息</string>
+    <string name="info_03">请选择</string>
+    <string name="info_04">详细信息</string>
+    <string name="info_05">经纬度：</string>
+    <string name="info_06">上传照片</string>
+    <string name="info_07">上传视频</string>
+    <string name="info_08">照片</string>
+    <string name="info_09">视频</string>
+    <string name="info_10">地址：</string>
+    <!--个人信息-->
+    <string name="mine_01">头像</string>
+    <string name="mine_02">姓名</string>
+    <string name="mine_03">电话</string>
+    <string name="mine_04">职位</string>
+    <string name="mine_05">工作年限</string>
+    <string name="mine_06">身份证号</string>
+    <string name="mine_07">修改个人信息</string>
+    <!--信息列表-->
+    <string name="infolist_01">请输入想要搜索的部件的详细信息</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--导航-->
     <string name="menu_home">现场寻查</string>

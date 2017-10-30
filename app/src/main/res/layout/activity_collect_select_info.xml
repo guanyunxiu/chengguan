@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <include layout="@layout/toolbar"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/height_10"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30"
+                android:text="@string/info_02"
+                android:textColor="@color/main_blue"
+                android:textSize="@dimen/size_16"
+                android:gravity="center_vertical"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/jc_rlv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_40"
+                android:text="@string/info_04"
+                android:textColor="@color/main_blue"
+                android:textSize="@dimen/size_16"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/latlng_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经纬度：经度111.344        纬度37.2342"
+                android:textColor="@color/text_color"
+                />
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址：山西省太原市小店区电商街电子商务产业园"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/height_10"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_40"
+                android:text="@string/info_08"
+                android:textColor="@color/text_color"
+                android:gravity="center_vertical"
+
+                />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/photo_rlv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_40"
+                android:text="@string/info_09"
+                android:textColor="@color/text_color"
+                android:gravity="center_vertical"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/video_rlv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_20"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -33,15 +33,23 @@ public class WeatherSearchActivity extends BaseActivity implements OnWeatherSear
     private LocalWeatherForecast weatherforecast;
     private List<LocalDayWeatherForecast> forecastlist = null;
     private String cityname= MyConfig.myCity;//天气搜索的城市，可以写名称或adcode；
-
+    @Override
+    protected int attachLayoutRes() {
+        return R.layout.weather_activity;
+    }
 
     @Override
-    protected void setContentView() {
-        setContentView(R.layout.weather_activity);
+    protected void initViews() {
         init();
         searchliveweather();
         searchforcastsweather();
     }
+
+    @Override
+    protected void updateViews() {
+
+    }
+
     public void init() {
             TextView city =(TextView)findViewById(R.id.city);
             city.setText(cityname);
@@ -146,5 +154,7 @@ public class WeatherSearchActivity extends BaseActivity implements OnWeatherSear
                 forecast+=date+"  "+week+"                       "+temp+"\n\n";          
             }
             forecasttv.setText(forecast);
-        }  
+        }
+
+
 }

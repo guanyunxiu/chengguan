@@ -26,14 +26,16 @@ public class ImageSingActivity extends BaseActivity {
     FrameLayout imageLayout;
     private PhotoViewAttacher mAttacher;
     private Bitmap bitmap;
+
+
     @Override
-    protected void setContentView() {
-        setContentView(R.layout.image_detail_fragment);
-        bitmap=getIntent().getParcelableExtra("bitmap");
+    protected int attachLayoutRes() {
+        return R.layout.image_detail_fragment;
     }
 
     @Override
-    protected void init() {
+    protected void initViews() {
+        bitmap=getIntent().getParcelableExtra("bitmap");
         mAttacher = new PhotoViewAttacher(image);
         setimage(bitmap);
         mAttacher.setOnPhotoTapListener(new PhotoViewAttacher.OnPhotoTapListener() {
@@ -44,8 +46,12 @@ public class ImageSingActivity extends BaseActivity {
             }
         });
     }
-
     private void setimage(Bitmap bitmap) {
         image.setImageBitmap(bitmap);
+    }
+
+    @Override
+    protected void updateViews() {
+
     }
 }

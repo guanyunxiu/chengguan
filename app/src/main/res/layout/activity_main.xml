@@ -29,20 +29,20 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/main_height"
             android:orientation="horizontal"
-            android:background="@android:color/white"
+            android:background="@color/main_blue"
             android:gravity="center_vertical"
             >
             <RelativeLayout
                 style="@style/tab_item_background"
                 >
                 <RadioButton
-                    android:id="@+id/id_scenicpot_rdo"
+                    android:id="@+id/main01_rd"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:drawableTop="@mipmap/icon_main"
+                    android:drawableTop="@mipmap/tab_01_false"
                     android:onClick="homeClicked"
                     android:clickable="true"
-                    android:text="@string/menu_main"
+                    android:text="@string/main_01"
                     style="@style/text_style2"
                     android:textSize="@dimen/size_10"
                     android:button="@null"
@@ -54,47 +54,35 @@
                 style="@style/tab_item_background"
                 >
                 <RadioButton
-                    android:id="@+id/id_mine_rdo"
+                    android:id="@+id/main02_rd"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:drawableTop="@mipmap/icon_foot"
+                    android:drawableTop="@mipmap/tab_02_false"
                     android:onClick="myselfClicked"
                     android:clickable="true"
                     android:button="@null"
                     android:layout_marginTop="@dimen/margin_7"
-                    android:text="@string/menu_mine"
+                    android:text="@string/main_02"
                     style="@style/text_style2"
                     android:textSize="@dimen/size_10"
                     />
             </RelativeLayout>
+
             <RelativeLayout
                 style="@style/tab_item_background"
                 >
                 <RadioButton
-                    android:id="@+id/id_chat_rdo"
+                    android:id="@+id/main03_rd"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:drawableTop="@mipmap/icon_chat"
+                    android:drawableTop="@mipmap/tab_03_false"
                     android:onClick="myselfClicked"
                     android:clickable="true"
                     android:button="@null"
                     android:layout_marginTop="@dimen/margin_7"
-                    android:text="@string/menu_chat"
+                    android:text="@string/main_03"
                     style="@style/text_style2"
                     android:textSize="@dimen/size_10"
-                    />
-                <TextView
-                    android:id="@+id/message_num"
-                    android:layout_width="13dp"
-                    android:layout_height="13dp"
-                    android:layout_toRightOf="@id/id_chat_rdo"
-                    android:layout_marginLeft="-10dp"
-                    android:textSize="10sp"
-                    android:background="@drawable/circle"
-                    android:textColor="@color/white"
-                    android:gravity="center"
-                    android:visibility="gone"
-
                     />
             </RelativeLayout>
         </RadioGroup>

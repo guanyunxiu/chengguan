@@ -2,10 +2,17 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">false</item>
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/yellow</item>
+        <item name="colorPrimary">@color/main_blue</item>
+        <item name="colorPrimaryDark">@color/main_blue</item>
+        <item name="colorAccent">@color/main_blue</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
     </style>
 
     <style name="tab_item_background">
@@ -18,7 +25,7 @@
     </style>
     <style name="text_style2">
         <item name="android:typeface">serif</item>
-        <item name="android:textColor">@color/city_text_color</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
 
@@ -52,5 +59,56 @@
         <item name="android:background">@android:drawable/menuitem_background</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
+    </style>
+
+
+    <!--设置toolbar的菜单-->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:colorBackground">#ffffff</item>  <!-- 设置背景颜色-->
+        <item name="android:width">@dimen/height_50</item>
+        <item name="android:textColor">@color/main_blue</item>
+        <!--用于控制menu弹出的位置，位于toolbar的下面，而不是上面-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!-- 添加这一句， 即可改变toolbar menu 图标的颜色-->
+        <item name="android:textColorSecondary">#ffffff</item>
+        <!-- 修改字体大小 -->
+        <item name="android:textSize">@dimen/size_14</item>
+        <!--toolbar标题文字颜色-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- 用于修改item默认的分割线-->
+        <item name="android:dropDownListViewStyle">@style/dropDownStyle</item>
+        <item name="dropDownListViewStyle">@style/dropDownStyle</item>
+
+    </style>
+
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <!--用于修改popmenu的分割线-->
+    <style name="dropDownStyle" parent="android:style/Widget.Holo.ListView.DropDown">
+        <!--<item name="android:listSelector">可添加选中背景颜色</item>-->
+        <item name="android:divider">#908d8d8d</item>
+        <item name="android:dividerHeight">0.5dp</item>
+    </style>
+
+    <style name="popupTextProfile" parent="@style/TextAppearance.Widget.AppCompat.ExpandedMenu.Item">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--启动页主题-->
+    <style name="FullScreen_Welcome" parent="AppTheme">
+        <!--启动页背景-->
+        <item name="android:background">@mipmap/start_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>

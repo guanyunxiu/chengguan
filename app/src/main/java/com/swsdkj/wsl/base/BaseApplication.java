@@ -1,8 +1,10 @@
 package com.swsdkj.wsl.base;
 
+import android.app.Activity;
 import android.app.Application;
 import android.support.multidex.MultiDex;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.amap.api.location.AMapLocation;
@@ -17,11 +19,13 @@ import com.swsdkj.wsl.bean.SealExtensionModule;
 import com.swsdkj.wsl.bean.UpdateModel;
 import com.swsdkj.wsl.config.MyConfig;
 import com.swsdkj.wsl.config.SharedConstants;
+import com.swsdkj.wsl.tool.FontsOverride;
 import com.swsdkj.wsl.tool.SharedPrefUtil;
 
 import org.xutils.x;
 
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 import io.rong.imkit.DefaultExtensionModule;
@@ -38,9 +42,11 @@ import io.rong.imlib.model.Message;
 public class BaseApplication extends Application {
     public static SharedPrefUtil mSharedPrefUtil;
     private static BaseApplication mApplication;
+    public static List<Activity> activityList = new LinkedList<Activity>();
     @Override
     public void onCreate() {
         super.onCreate();
+        FontsOverride.setDefaultFont(this, "SERIF", "fonts/PingFang Bold.ttf");
         mApplication = this;
         mSharedPrefUtil=new SharedPrefUtil(this, SharedConstants.sharersinfor);
         x.Ext.init(this);
@@ -53,7 +59,17 @@ public class BaseApplication extends Application {
         MultiDex.install(this);
     }
 
+    public void removeActivity(Activity act, int index) {
+        if (activityList != null && !activityList.isEmpty()) {
+            activityList.remove(act);
+        }
+    }
 
+    public void addActivity(Activity act) {
+        if (activityList != null) {
+            activityList.add(act);
+        }
+    }
     public void setMyExtensionModule() {
         List<IExtensionModule> moduleList = RongExtensionManager.getInstance().getExtensionModules();
         IExtensionModule defaultModule = null;
@@ -121,22 +137,26 @@ public class BaseApplication extends Application {
             if (location != null) {
                 Double geoLat = location.getLatitude();
                 Double geoLng = location.getLongitude();
-                String cityCode = "";
-                String desc = "";
+                MyConfig.Lat  = geoLat;
+                MyConfig.Lng = geoLng;
+                String cityCode = location.getCityCode();
+                String desc = location.getDistrict();
+
+                location.getStreetNum();
+
                 Log.i("aaaalocation",geoLat+"***"+geoLng);
-               /* String str = ("定位成功:(" + geoLng + "," + geoLat + ")"
+                String str = ("定位成功:(" + geoLng + "," + geoLat + ")"
                         + "\n精    度    :" + location.getAccuracy() + "米"
                         + "\n定位方式:" + location.getProvider() + "\n定位时间:"
-                        + new Date(location.getTime()).toLocaleString() + "\n城市编码:"
-                        + cityCode + "\n位置描述:" + desc + "\n省:"
+                        + new Date(location.getTime()).toLocaleString() + "\n位置描述:" + desc + "\n省:"
                         + location.getProvince() + "\n市:" + location.getCity()
-                        + "\n区(县):" + location.getDistrict() + "\n区域编码:" + location
-                        .getAdCode()+"\n国家"+location.getCountry()+"\n详细地址："+location.getAddress());
+                         + "\n城市编码:"
+                        +cityCode+ "\n区(县):" + location.getDistrict() + "\n区域编码:" + location
+                        .getAdCode()+"\n国家:"+location.getCountry()+"\n详细地址："+location.getAddress());
 
-                Log.i("123",str+"--------------高德定位----------------");*/
+                Log.i("123",str+"--------------高德定位----------------");
                 MyConfig. myCity = location.getCity();
                 MyConfig.myAddress=location.getAddress();
-
             }
         }
     };

@@ -88,18 +88,22 @@ public class SignActivity extends BaseActivity implements SignContract.View,Vide
     private String mFilePath;
     private FileInputStream is = null;
     @Override
-    protected void setContentView() {
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
-        setContentView(R.layout.activity_sign);
-        context = this;
-        mactivity = this;
-        signPresenter = new SignPresenterImpl(this);
+    protected int attachLayoutRes() {
+        return R.layout.activity_sign;
     }
 
     @Override
-    protected void init() {
+    protected void initViews() {
+        context = this;
+        mactivity = this;
+        signPresenter = new SignPresenterImpl(this);
         timeTV.setText(CommonUtil.getTime2());
         addressTV.setText(MyConfig.myAddress+"");
+    }
+
+    @Override
+    protected void updateViews() {
+
     }
 
     @OnClick({R.id.id_photo_lv1,R.id.id_photo_lv2,R.id.id_submit})
@@ -138,11 +142,7 @@ public class SignActivity extends BaseActivity implements SignContract.View,Vide
                         new ActionSheetDialog.OnSheetItemClickListener() {
                             @Override
                             public void onClick(int which) {
-                                if (hasPermission(Manifest.permission.RECORD_AUDIO)) {
                                     VideoInputDialog.show(getSupportFragmentManager(),SignActivity.this, VideoInputDialog.Q720,mactivity);
-                                } else {
-                                    requestPermission(MyConfig.RADIO_CODE, Manifest.permission.RECORD_AUDIO);
-                                }
                             }
                         }).show();
     }
@@ -326,4 +326,6 @@ public class SignActivity extends BaseActivity implements SignContract.View,Vide
             //ignore
         }
     }
+
+
 }

@@ -11,8 +11,11 @@ import android.provider.MediaStore;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
+import com.maning.mndialoglibrary.MProgressDialog;
 import com.swsdkj.wsl.R;
 import com.swsdkj.wsl.base.BaseApplication;
 import com.swsdkj.wsl.bean.User;
@@ -321,5 +324,22 @@ public class CommonUtil {
         java.util.Random random=new java.util.Random();// 定义随机类
         int result=random.nextInt(100);// 返回[0,10)集合中的整数，注意不包括10
         return result;              // +1后，[0,10)集合变为[1,11)集合，满足要求
+    }
+    /**
+     * 隐藏软键盘
+     * @param context 上下文
+     * @param view 控件
+     */
+    public static void hideSoftInput(Context context,View view){
+        InputMethodManager imm = (InputMethodManager)context.getSystemService(Context.INPUT_METHOD_SERVICE);
+        // imm.showSoftInput(view,InputMethodManager.SHOW_FORCED);
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0); //强制隐藏键盘
+    }
+    public static MProgressDialog configDialogDefault(Context context) {
+        //新建一个Dialog
+        MProgressDialog mMProgressDialog = new MProgressDialog(context);
+        mMProgressDialog.setBackgroundWindowColor(R.color.b_t);
+        mMProgressDialog.setCanceledOnTouchOutside(true);
+        return mMProgressDialog;
     }
 }

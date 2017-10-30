@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.yqritc.scalablevideoview.ScalableVideoView
+        android:id="@+id/id_video_sdv2"
+        android:layout_width="@dimen/height_80"
+        android:layout_height="@dimen/height_80"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/height_10"
+        >
+    </com.yqritc.scalablevideoview.ScalableVideoView>
+</LinearLayout>

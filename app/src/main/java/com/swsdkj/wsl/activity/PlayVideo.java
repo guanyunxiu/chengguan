@@ -24,13 +24,13 @@ public class PlayVideo extends BaseActivity {
     private SurfaceVideoViewCreator surfaceVideoViewCreator;
     private String path;
     @Override
-    protected void setContentView() {
-        setContentView(R.layout.activity_playvideo);
-        path = getIntent().getStringExtra("path");
+    protected int attachLayoutRes() {
+        return R.layout.activity_playvideo;
     }
 
     @Override
-    protected void init() {
+    protected void initViews() {
+        path = getIntent().getStringExtra("path");
         ActivityCompat.requestPermissions(
                 PlayVideo.this, new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1
         );
@@ -86,12 +86,17 @@ public class PlayVideo extends BaseActivity {
                     @Override
                     protected String getVideoPath() {
                         Log.i("play","getVideoPath");
-                       // return "http://121.42.183.149:8080/CWA/upload/4/sign/0543808f-fbe6-4846-bb97-a39eb5a23911.mp4";
+                        // return "http://121.42.183.149:8080/CWA/upload/4/sign/0543808f-fbe6-4846-bb97-a39eb5a23911.mp4";
                         return path;
                     }
                 };
         surfaceVideoViewCreator.debugModel = true;
         surfaceVideoViewCreator.setUseCache(true);
+    }
+
+    @Override
+    protected void updateViews() {
+
     }
     @Override
     protected void onPause() {
@@ -128,4 +133,6 @@ public class PlayVideo extends BaseActivity {
         }
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
+
+
 }

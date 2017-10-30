@@ -67,22 +67,26 @@
         <service android:name="com.amap.api.location.APSService"></service>
 
         <activity android:name=".activity.WelComeActivity"
-            android:theme="@style/SplashTheme"
+            android:theme="@style/FullScreen_Welcome"
             android:fitsSystemWindows="true"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.GaoDeMapActivity">
 
-
-        <activity android:name=".activity.MainActivity"/>
+        </activity>
+        <activity android:name=".activity.DrawTestActivity">
+        </activity>
+        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.CollectInfoActivity"></activity>
+        <activity android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            />
 
         <activity android:name=".activity.SignActivity"/>
-
-        <activity android:name=".activity.LoginActivity"/>
 
         <activity android:name=".activity.RegisterActivity"/>
 
@@ -96,7 +100,9 @@
         <activity android:name=".activity.ImagePagerActivity"/>
         <activity android:name=".activity.PlayVideo"/>
         <activity android:name=".activity.WeatherSearchActivity"/>
-
+        <activity android:name=".activity.CropActivity"></activity>
+        <activity android:name=".activity.CollectSelectInfoActivity"></activity>
+        <activity android:name=".activity.CollectListSelectActivity"></activity>
         <!--会话界面-->
         <activity
             android:name=".activity.ChatActivity"
@@ -147,44 +153,6 @@
                 android:resource="@xml/install_file" />
         </provider>
 
-
-
-        <!--新加功能-->
-        <activity
-            android:name="com.wbapp.omxvideo.StartActivity"
-            android:label="@string/app_name"
-            android:launchMode="singleInstance"
-            android:screenOrientation="landscape"
-            android:theme="@style/CustomTheme"
-            android:configChanges="keyboardHidden|orientation|screenSize">
-        </activity>
-
-
-        <activity android:name="com.wbapp.omxvideo.OMXVideoActivity"
-            android:launchMode="singleInstance"
-            android:screenOrientation="landscape"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@style/CustomTheme"
-            >
-        </activity>
-
-        <activity android:name="com.wbapp.omxvideo.VideoSettingsActivity" />
-
-        <activity android:name="com.wbapp.omxvideo.ClientActivity" />
-        <activity android:name="com.wbapp.omxvideo.ClientSettingsActivity" />
-        <activity android:name="com.wbapp.omxvideo.PlayActivity"
-            android:screenOrientation="landscape" />
-
-        <activity android:name="com.wbapp.omxvideo.ReplayListActivity"
-            android:configChanges="orientation" />
-        <activity android:name="com.wbapp.omxvideo.VideoViewActivity"
-            android:screenOrientation="landscape"  />
-        <activity android:name="com.wbapp.omxvideo.ImageViewActivity" />
-
-        <activity android:name="com.wbapp.omxvideo.AudioRecordActivity"
-            android:screenOrientation="landscape" />
-        <activity android:name="com.wbapp.omxvideo.WebContentActivity"
-            />
     </application>
 
 </manifest>

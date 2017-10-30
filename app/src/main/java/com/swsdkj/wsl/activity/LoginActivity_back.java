@@ -51,21 +51,6 @@ public class LoginActivity_back extends BaseActivity implements LoginContract.Vi
     Button submitBut;
 
     private LoginPresenterImpl loginPresenter;
-    @Override
-    protected void setContentView() {
-
-        setContentView(R.layout.activity_longin);
-        context = this;
-        loginPresenter = new LoginPresenterImpl(this);
-
-
-    }
-
-    @Override
-    protected void init() {
-
-        initData();
-    }
 
     private void initData() {
         stringList.add("施工队一");
@@ -144,11 +129,29 @@ public class LoginActivity_back extends BaseActivity implements LoginContract.Vi
 
     @Override
     public void onSendCodeSuccess() {
-        setCountdown(sendCodeTV);
+
     }
 
     @Override
     public void onSendCodeFail() {
         CommonUtil.showToast(context,"验证码获取失败");
+    }
+
+    @Override
+    protected int attachLayoutRes() {
+        return R.layout.activity_longin;
+    }
+
+    @Override
+    protected void initViews() {
+        context = this;
+        loginPresenter = new LoginPresenterImpl(this);
+        initData();
+
+    }
+
+    @Override
+    protected void updateViews() {
+
     }
 }
