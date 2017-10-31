@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\IMKit\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw\\values-sw.xml",
+        "outputFile": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\IMKit\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw\\values-sw.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 128
                 },
                 "from": {
-                    "file": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\IMKit\\build\\intermediates\\exploded-aar\\CWA\\IMLib\\unspecified\\res\\values-sw\\values-sw.xml",
+                    "file": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\IMKit\\build\\intermediates\\exploded-aar\\CWA\\IMLib\\unspecified\\res\\values-sw\\values-sw.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 222
                 },
                 "from": {
-                    "file": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\IMKit\\build\\intermediates\\exploded-aar\\CWA\\IMLib\\unspecified\\res\\values-sw\\values-sw.xml",
+                    "file": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\IMKit\\build\\intermediates\\exploded-aar\\CWA\\IMLib\\unspecified\\res\\values-sw\\values-sw.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 299
                 },
                 "from": {
-                    "file": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\IMKit\\build\\intermediates\\exploded-aar\\CWA\\IMLib\\unspecified\\res\\values-sw\\values-sw.xml",
+                    "file": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\IMKit\\build\\intermediates\\exploded-aar\\CWA\\IMLib\\unspecified\\res\\values-sw\\values-sw.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

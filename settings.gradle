@@ -1,1 +1,1 @@
-include ':app', ':camera', ':shvideolibrary', ':iOS_Dialog_Library', ':wechatsmallvideoview', ':IMLib', ':IMKit', ':Sticker'
+include ':app', ':camera', ':shvideolibrary', ':iOS_Dialog_Library', ':wechatsmallvideoview', ':IMLib', ':IMKit', ':Sticker', ':library'

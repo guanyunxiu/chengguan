@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/camera/camera.iml" filepath="$PROJECT_DIR$/camera/camera.iml" />
       <module fileurl="file://$PROJECT_DIR$/iOS_Dialog_Library/iOS_Dialog_Library.iml" filepath="$PROJECT_DIR$/iOS_Dialog_Library/iOS_Dialog_Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/shvideolibrary/shvideolibrary.iml" filepath="$PROJECT_DIR$/shvideolibrary/shvideolibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/wechatsmallvideoview/wechatsmallvideoview.iml" filepath="$PROJECT_DIR$/wechatsmallvideoview/wechatsmallvideoview.iml" />
     </modules>

@@ -22,6 +22,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
     defaultConfig {
         multiDexEnabled true
     }
@@ -38,6 +41,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile 'com.android.support:design:25.3.0'
     compile 'com.android.support:appcompat-v7:25.3.0'
     testCompile 'junit:junit:4.12'
     compile 'com.jakewharton:butterknife:8.0.1'
@@ -71,4 +75,20 @@ dependencies {
     compile files('libs/Amap_2DMap_V4.2.0_20170209.jar')
     compile files('libs/ftp4j-1.7.jar')
     compile 'com.android.support:multidex:1.0.1' //支持包用于5.0以下系统
+    //tablayout
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    //BaseRecyclerViewAdapterHelper
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.8.5'
+    compile project(path: ':library')
+    // Dialog
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+    // 图像剪切
+    compile('com.kevin:crop:1.0.2') {
+        // 如果已经引入 support:appcompat-v7 可以加上这句话
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    //权限
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.1@aar'
+    //加载框
+    compile 'com.github.maning0303:MNProgressHUD:V1.0.0'
 }

@@ -1,31 +1,5 @@
 [
     {
-        "outputFile": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endLine": 4,
-                    "endColumn": 12,
-                    "endOffset": 199
-                },
-                "from": {
-                    "file": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\src\\main\\res\\values-v11\\styles.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 182,
-                        "endLine": 8,
-                        "endColumn": 12,
-                        "endOffset": 328
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\iOS_Dialog_Library\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
         "map": [
             {

@@ -1,9 +1,5 @@
 [
     {
-        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\actionsheet_middle_selector.xml",
-        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\bundles\\debug\\res\\drawable\\actionsheet_middle_selector.xml"
-    },
-    {
         "merged": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\alertdialog_single_selector.xml",
         "source": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\iOS_Dialog_Library\\build\\intermediates\\bundles\\debug\\res\\drawable\\alertdialog_single_selector.xml"
     },
@@ -20,32 +16,8 @@
         "source": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\iOS_Dialog_Library\\build\\intermediates\\bundles\\debug\\res\\drawable\\actionsheet_bottom_selector.xml"
     },
     {
-        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\actionsheet_bottom_selector.xml",
-        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\bundles\\debug\\res\\drawable\\actionsheet_bottom_selector.xml"
-    },
-    {
-        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\alertdialog_right_selector.xml",
-        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\bundles\\debug\\res\\drawable\\alertdialog_right_selector.xml"
-    },
-    {
-        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\alertdialog_single_selector.xml",
-        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\bundles\\debug\\res\\drawable\\alertdialog_single_selector.xml"
-    },
-    {
-        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\actionsheet_single_selector.xml",
-        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\bundles\\debug\\res\\drawable\\actionsheet_single_selector.xml"
-    },
-    {
         "merged": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\actionsheet_middle_selector.xml",
         "source": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\iOS_Dialog_Library\\build\\intermediates\\bundles\\debug\\res\\drawable\\actionsheet_middle_selector.xml"
-    },
-    {
-        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\alertdialog_left_selector.xml",
-        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\bundles\\debug\\res\\drawable\\alertdialog_left_selector.xml"
-    },
-    {
-        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\actionsheet_top_selector.xml",
-        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\bundles\\debug\\res\\drawable\\actionsheet_top_selector.xml"
     },
     {
         "merged": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\alertdialog_left_selector.xml",

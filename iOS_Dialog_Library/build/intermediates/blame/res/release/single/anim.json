@@ -1,10 +1,10 @@
 [
     {
-        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\release\\anim\\actionsheet_dialog_out.xml",
-        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\src\\main\\res\\anim\\actionsheet_dialog_out.xml"
+        "merged": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\release\\anim\\actionsheet_dialog_in.xml",
+        "source": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\iOS_Dialog_Library\\src\\main\\res\\anim\\actionsheet_dialog_in.xml"
     },
     {
-        "merged": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\release\\anim\\actionsheet_dialog_in.xml",
-        "source": "E:\\Workspace\\studio_workspace\\CWA\\CWA\\iOS_Dialog_Library\\src\\main\\res\\anim\\actionsheet_dialog_in.xml"
+        "merged": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\iOS_Dialog_Library\\build\\intermediates\\res\\merged\\release\\anim\\actionsheet_dialog_out.xml",
+        "source": "E:\\Workspace\\companny_workspace\\chengguan\\CWA\\iOS_Dialog_Library\\src\\main\\res\\anim\\actionsheet_dialog_out.xml"
     }
 ]
